@@ -1,0 +1,8 @@
+{
+  "name": "FromStart",
+  "app_id": "1455bb29",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
