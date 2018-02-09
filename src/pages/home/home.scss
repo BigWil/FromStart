@@ -20,7 +20,7 @@ page-home {
       .splash-info {
         position: relative;
         z-index: 2;
-        margin-top: -114px;
+        margin-top: -164px;
         text-align: center;
       }
       .splash-logo {
@@ -31,10 +31,12 @@ page-home {
         height: 228px;
       }
       .splash-intro {
-        font-size: 18px;
+        font-size: 28px;
         font-weight: bold;
         max-width: 80%;
         margin: auto;
+        margin-bottom:20px;
+        color:#fff;
       }
       button.splash:before {
         margin-top:-15px;
