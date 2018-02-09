@@ -8,8 +8,7 @@ import { HomePage } from './home';
     HomePage,
   ],
   imports: [
-    IonicPageModule.forChild(HomePage),
-    TranslateModule.forChild()
+    IonicPageModule.forChild(HomePage)
   ],
   exports: [
     HomePage
