@@ -13,7 +13,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ApiProvider {
-  url: string = 'https://example.com/api/v1';
+  url: string = 'https://grandstrandapi.com/api/v1';
 
   constructor(public http: HttpClient) {
     //console.log('Hello ApiProvider Provider');
@@ -22,13 +22,13 @@ export class ApiProvider {
   get(endpoint: string, params?: any, reqOpts?: any) {
     if (!reqOpts) {
       reqOpts = {
-        params: new HttpParams()
+        //params: new HttpParams()
       };
     }
 
     // Support easy query params for GET requests
     if (params) {
-      reqOpts.params = new HttpParams();
+      //reqOpts.params = new HttpParams();
       for (let k in params) {
         reqOpts.params = reqOpts.params.set(k, params[k]);
       }
