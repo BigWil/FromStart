@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 //import { HttpClient, HttpClientModule } from '@angular/common/http';
-//import { IonicStorageModule, Storage } from '@ionic/storage';
+import { IonicStorageModule, Storage } from '@ionic/storage';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';

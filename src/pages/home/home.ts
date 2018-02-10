@@ -8,16 +8,18 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) { }
+  constructor(private storage: Storage, public navCtrl: NavController) { }
 
   goVacationer() {
+    //this.storage.set('vtype', 'vacationers');
     this.navCtrl.setRoot('MainPage');
-    alert('Vacationer');
   }
   goLocal() {
+    //this.storage.set('vtype', 'locals');
     this.navCtrl.setRoot('MainPage');
   }
   goOther() {
+    //this.storage.set('vtype', 'others');
     this.navCtrl.setRoot('MainPage');
   }  
   

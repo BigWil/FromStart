@@ -1,20 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-
 import { HttpClientModule } from '@angular/common/http';
-import { IonicStorageModule } from '@ionic/storage';
-
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+
 import { ApiProvider } from '../providers/api/api';
-import { LocalStorageProvider } from '../providers/local-storage/local-storage';
+import { Settings } from '../providers/settings/settings';
 
 @NgModule({
   declarations: [
@@ -26,8 +24,7 @@ import { LocalStorageProvider } from '../providers/local-storage/local-storage';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicStorageModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +38,7 @@ import { LocalStorageProvider } from '../providers/local-storage/local-storage';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
-    LocalStorageProvider
+    Settings
   ]
 })
 export class AppModule {}
