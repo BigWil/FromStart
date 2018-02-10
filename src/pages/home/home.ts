@@ -8,7 +8,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(private storage: Storage, public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController) { }
 
   goVacationer() {
     //this.storage.set('vtype', 'vacationers');
