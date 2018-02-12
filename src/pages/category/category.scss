@@ -1,0 +1,19 @@
+page-category {
+
+    ion-item {
+        &:first-child {
+          border-top: none !important;
+        }
+    
+        &:last-child {
+          border-bottom: none !important;
+        }
+    
+        ion-avatar img {
+          max-width: 6rem !important;
+          max-height: 6rem !important;
+          border-radius: 4rem !important;
+        }
+      }
+      
+}

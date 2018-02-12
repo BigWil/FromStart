@@ -9,7 +9,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { CategoryPage } from '../pages/category/category';
 import { AboutPage } from '../pages/about/about';
 
 import { ApiProvider } from '../providers/api/api';
@@ -19,7 +19,7 @@ import { UserData } from '../providers/user-data';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+    CategoryPage,
     AboutPage
   ],
   imports: [
@@ -32,7 +32,7 @@ import { UserData } from '../providers/user-data';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+    CategoryPage,
     AboutPage
   ],
   providers: [
