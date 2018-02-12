@@ -10,7 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 
-import { UserData } from '../providers/user-data';
+//import { UserData } from '../providers/user-data';
 
 @Component({
   templateUrl: 'app.html'

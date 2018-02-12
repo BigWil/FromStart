@@ -1,3 +1,38 @@
 page-main {
-
-}
+    .scroll-content {
+      background: rgba(41, 186, 156, 0.3);
+    }
+    ion-item {
+      &:first-child {
+        border-top: none !important;
+      }
+  
+      &:last-child {
+        border-bottom: none !important;
+      }
+  
+      ion-avatar img {
+        max-width: 6rem !important;
+        max-height: 6rem !important;
+        border-radius: 4rem !important;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .img-description {
+      text-align:center;
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.5);
+      font-family: "Roboto Condensed";
+      color:#fff;
+      font-size: 18px;
+      padding: 10px;
+      margin:0;
+    }
+  }
+  

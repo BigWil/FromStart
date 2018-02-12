@@ -15,6 +15,17 @@ export class UserData {
     public storage: Storage
   ) {}
 
+  setVtype(vtype: string): void {
+    this.storage.set('vType', vtype);
+  };
+
+  getVtype(): Promise<string> {
+    return this.storage.get('vType').then((value) => {
+      return value;
+    });
+  };
+  
+  /*
   hasFavorite(sessionName: string): boolean {
     return (this._favorites.indexOf(sessionName) > -1);
   };
@@ -69,4 +80,6 @@ export class UserData {
       return value;
     });
   };
+
+  */
 }

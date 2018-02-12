@@ -15,6 +15,30 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../assets/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+ion-app {
+  font-family: 'Roboto Condensed', "Helvetica Neue", sans-serif !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.menu-toolbar {
+  padding: 0;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.centered {
+  text-align: center;
+}
 
 // Media of at most the maximum breakpoint width. No query for the largest breakpoint.
 // Makes the @content apply to the given breakpoint and narrower.

@@ -1,14 +1,84 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Popular Searches</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col>
+        <img src="../assets/imgs/grids/diningcat.jpg">
+        <div class="img-description">DINING</div>        
+      </ion-col>
+      <ion-col>
+          <img src="../assets/imgs/grids/attractionscat.jpg">
+          <div class="img-description">ATTRACTIONS</div>  
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <img src="../assets/imgs/grids/entertainmentcat.jpg">
+          <div class="img-description">ENTERTAINMENT</div>  
+      </ion-col>
+      <ion-col>
+          <img src="../assets/imgs/grids/lodgingcat.jpg">
+          <div class="img-description">HOTEL/RESORT</div>  
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <img src="../assets/imgs/grids/nightlifecat.jpg">
+            <div class="img-description">NIGHTLIFE</div> 
+        </ion-col>
+        <ion-col>
+            <img src="../assets/imgs/grids/golfingcat.jpg">
+            <div class="img-description">GOLFING</div> 
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <img src="../assets/imgs/grids/eventscat.jpg">
+              <div class="img-description">EVENTS</div> 
+          </ion-col>
+          <ion-col>
+              <img src="../assets/imgs/grids/pamperingcat.jpg">
+              <div class="img-description">PAMPERING</div> 
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <img src="../assets/imgs/grids/beautycat.jpg">
+                <div class="img-description">BEAUTY</div> 
+            </ion-col>
+            <ion-col>
+                <img src="../assets/imgs/grids/shoppingcat.jpg">
+                <div class="img-description">SHOPPING</div> 
+            </ion-col>
+          </ion-row>        
+          <ion-row>
+              <ion-col class="centered">
+                <p>
+                <button ion-button color="secondary" (click)="goCategories()">Browse More Categories</button>
+                </p>
+              </ion-col>
+          </ion-row>
+</ion-grid>
 
+
+ <!-- <ion-list *ngIf="isContentViewVisible">
+    <ion-item *ngFor="let category of categories" (click)="goToPlaces(category)">
+      <ion-avatar item-left>
+        <img src="assets/img/tag.png" offset="100"
+          [lazyLoad]="category.imageThumb.url()"
+          [scrollTarget]="container.getScrollElement()">
+      </ion-avatar>
+      <h2>{{ category.title }}</h2>
+    </ion-item>
+  </ion-list> -->
 
   
 </ion-content>
